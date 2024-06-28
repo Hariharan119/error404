@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Hariharan119 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+    <link rel="icon" type="image/x-icon" href="./error404.ico">
+    <style type="text/css">
+        .error-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 96vh;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-family: "Tiny5", sans-serif;
+            font-weight: 400;
+            line-height: 1px;
+
+        }
+
+        .error-content {
+            float: right;
+            margin-bottom: 30px;
+        }
+
+        #error-message {
+            font-size: 1em;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+        }
+        
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            font-variant: small-caps;
+            box-shadow: 5px 10px 10px gray;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            box-shadow: 5px 10px 10px black;
+            padding: 11px 21px;
+        }
+
+        #one,#two {
+            animation: count 2s infinite;
+            animation-timing-function: step-end;
+        }
+
+
+        @keyframes count {
+            0% {
+                color: red;
+            }
+            25% {
+                color: orange;
+            }
+            50% {
+                color: yellow;
+            }
+            75% {
+                color: green;
+            }
+            100% {
+                color: blue;
+            }
+        }
+        
+
+        @media(max-width:910px) {
+            .error-container {
+                flex-direction: column;
+            }
+
+            .error-content {
+                text-align: center;
+                margin-top: -60px;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="error-container">
+        <img src="./404.gif" alt="404 image">
+        <div class="error-content">
+            <h2>Error <span id="one">4</span>0<span id="two">4</span></h2>
+            <p id="error-message">We could not find the page you were looking for <br/>It may have been moved, or it just does not exist.</p>
+            <a href="https://github.com/Hariharan119"><button>Go Back</button></a>
+        </div>
+    </div>
+</body>
+</html>
